@@ -8,6 +8,8 @@ $("input[type='submit']").on("click", function(evt) {
 	event.preventDefault();
 	//console.log("watchuwant"); //test
 
+	$("#pixelCanvas").empty();
+
 	const height = $("#inputHeight").val();
 	const width = $("#inputWidth").val();
 	//console.log(height, width + " as arguments"); //test
@@ -28,7 +30,7 @@ function makeGrid(height, width) {
 	
 	//create number of blocks in column
 	$("#pixelCanvas").append($("<tr></tr>"));
-	console.log("input----height" + " " + h);//test
+	//console.log("input----height" + " " + h);//test
 
 	//for grid width input
 	for (let w = 0; w < width; w++) {
